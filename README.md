@@ -1,38 +1,33 @@
 # Kiran M. Jayasurya — Academic Website
 
-A responsive single-page academic website built with plain HTML and CSS for GitHub Pages.
+Responsive, single-page academic website built with plain HTML and CSS for GitHub Pages.
 
-## Files
-- `index.html` — all page content and navigation
-- `styles.css` — colors, typography, layout, and responsive design
-- `assets/pdf/CV.pdf` — place your CV PDF here
-- `assets/img/` — optional images if you later add a profile photo
+## Features
+- Light/dark mode toggle, remembers the visitor's choice
+- Uses the native Apple system font stack on Apple devices (`-apple-system`, `BlinkMacSystemFont`); falls back to system UI fonts elsewhere
+- Responsive mobile navigation
+- Research, publications, observing, biography, CV, and contact sections
+- Search, authorship, and year filters for the publication list
+- No build process, Ruby, or Jekyll required
 
-## Publish with GitHub Pages
-1. Create a public GitHub repository named `YOUR-USERNAME.github.io`.
+## Publish
+1. Create a public repository named `YOUR-USERNAME.github.io`.
 2. Upload `index.html`, `styles.css`, and the `assets` folder to the repository root.
 3. In GitHub, open **Settings → Pages**.
-4. Under Build and deployment, choose **Deploy from a branch**, select `main` and `/(root)`, then Save.
-5. Wait a few minutes and open `https://YOUR-USERNAME.github.io/`.
+4. Choose **Deploy from a branch**, branch `main`, folder `/(root)`, then save.
+5. Wait for the site to publish at `https://YOUR-USERNAME.github.io/`.
 
 ## Personalize before publishing
-Search `index.html` for:
-- `YOUR.EMAIL@INSTITUTION.EDU` and `mailto:YOUR.EMAIL@INSTITUTION.EDU`
-- the ORCID, Google Scholar, and GitHub links
-- `Replace with your publication title`
-- `Your name and co-authors`
-- the sample journal details and project descriptions
+In `index.html`, search for `YOUR.EMAIL@INSTITUTION.EDU`, `Add your institution`, `Replace with`, `Publication placeholder`, and `YEAR–YEAR`. Replace all placeholders with accurate details or remove them.
 
-The sample publication is intentionally a placeholder. Replace it with a verified publication or remove the sample block. Update research descriptions so they accurately represent your work.
+- Update ORCID, Google Scholar, NASA ADS, GitHub, and institutional profile links.
+- Replace the example publication card with real verified bibliographic metadata. Duplicate the `<article class="publication-item" ...>` block for each paper. Set `data-year` to the paper's year and `data-authorship` to `first` or `co`.
+- Add your CV as `assets/pdf/CV.pdf`.
+- Remove the Observing section if you do not want it.
+- Check the descriptions carefully before publishing; starter research topics are not a substitute for a verified biography.
 
-## Add your CV
-Upload your CV as `assets/pdf/CV.pdf`. The CV link on the page points to that path. If you use another filename, update the link in `index.html`.
+## Apple fonts
+The stylesheet uses the operating system's built-in San Francisco/system font stack. On macOS and iOS it should use the native Apple UI font; on Windows/Linux it uses suitable local system fallbacks. Apple proprietary font files are not bundled.
 
-## Edit the design
-Change CSS custom properties near the top of `styles.css`:
-- `--paper`: page background
-- `--ink`: primary text
-- `--accent`: rust accent
-- `--serif` and `--sans`: typefaces
-
-The page uses Google Fonts when online and falls back to system fonts if those fonts are unavailable.
+## Theme
+The button in the navigation switches between light and dark themes. The choice is stored in local storage. On a first visit, the page follows the visitor's operating-system appearance preference.
