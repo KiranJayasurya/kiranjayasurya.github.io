@@ -1,0 +1,1 @@
+Upload your CV PDF into this folder and name it CV.pdf. Then remove this placeholder file if desired.
