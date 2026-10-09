@@ -1,166 +1,226 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiran M Jayasurya | Academic Profile</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Academic website of Kiran M. Jayasurya, researcher in high-energy astrophysics and X-ray astronomy.">
+  <title>Kiran M. Jayasurya — X-ray Astrophysics</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (() => {
+      const saved = localStorage.getItem('kmj-theme');
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = saved || (prefersDark ? 'dark' : 'light');
+    })();
+  </script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Kiran M Jayasurya</h1>
-            <p class="subtitle">Scientist, U R Rao Satellite Centre (URSC), ISRO <br> PhD Candidate, Raman Research Institute (RRI)</p>
-            <div class="contact-links">
-                <a href="mailto:kiranmj@rrimail.rri.res.in">kiranmj@rrimail.rri.res.in</a>
-                <span class="divider">•</span>
-                <a href="https://orcid.org/0000-0002-3430-9837" target="_blank">ORCID</a>
-            </div>
-        </header>
-
-        <section id="profile">
-            <h2>Personal Profile</h2>
-            <p>I am a Scientist at the Space Astronomy Group, U R Rao Satellite Centre (URSC), ISRO, Bengaluru. I am currently doing my PhD at the Raman Research Institute (RRI).</p>
-        </section>
-
-        <section id="research-interests">
-            <h2>Research Interests</h2>
-            <ul>
-                <li>X-ray Binaries, Pulsars and Ultraluminous X-ray Sources.</li>
-                <li>Tidal Disruption Events around Supermassive Black Holes.</li>
-                <li>Gamma-Ray Bursts and Multi-messenger Astronomy.</li>
-                <li>X-ray Instrumentation of Broadband X-ray Spectrometers and Photoelectric Polarimeters.</li>
-            </ul>
-        </section>
-
-        <section id="experience">
-            <h2>Professional & Research Experience</h2>
-            
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <h3>Scientist</h3>
-                    <span class="date">Jan 2021 – Present</span>
-                </div>
-                <p class="institution">U R Rao Satellite Centre (URSC), ISRO</p>
-                <p class="description">Involved in the development of space-based astronomy payloads for future ISRO missions.</p>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <h3>Postgraduate Researcher</h3>
-                    <span class="date">2018 – 2020</span>
-                </div>
-                <p class="institution">Indian Institute of Space Science and Technology, Trivandrum</p>
-                <p class="description">Tidal Disruption Events around Supermassive Black Holes.</p>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <h3>Student Researcher</h3>
-                    <span class="date">2017 – 2020</span>
-                </div>
-                <p class="institution">Indian Institute of Space Science and Technology, Trivandrum</p>
-                <p class="description">Gamma Ray Burst Afterglow Modeling.</p>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <h3>Student Researcher</h3>
-                    <span class="date">June 2018</span>
-                </div>
-                <p class="institution">Physical Research Laboratory</p>
-                <p class="description">Accretion Disks around Compact Objects.</p>
-            </div>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <h3>PhD in Astronomy and Astrophysics</h3>
-                    <span class="date">2025 – Present</span>
-                </div>
-                <p class="institution">Raman Research Institute, Bengaluru</p>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <h3>Master of Science in Astronomy and Astrophysics</h3>
-                    <span class="date">2018 – 2020</span>
-                </div>
-                <p class="institution">Indian Institute of Space Science and Technology, Trivandrum</p>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <h3>BTech in Engineering Physics</h3>
-                    <span class="date">2015 – 2018</span>
-                </div>
-                <p class="institution">Indian Institute of Space Science and Technology, Trivandrum</p>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <strong>Programming & Tools:</strong> Python, MATLAB, C++, LaTeX
-                </div>
-                <div class="skill-category">
-                    <strong>Simulation:</strong> Geant4, Garfield++, COMSOL
-                </div>
-                <div class="skill-category">
-                    <strong>Data Analysis:</strong> HEAsoft, CIAO, XMM Newton SAS, Hendrics
-                </div>
-            </div>
-        </section>
-
-        <section id="publications">
-            <h2>Selected Peer-Reviewed Publications</h2>
-            <ul class="publication-list">
-                <li>Chatterjee, R., Vadodariya, K., Vatedka, R., Agrawal, V. K., Tyagi, A., Jayasurya, K. M., et al. (2025). "XSPECT on-board XPoSat: Calibration and First Results". <em>arXiv e-prints</em>, arXiv:2506.09918. <a href="https://doi.org/10.48550/arXiv.2506.09918" target="_blank">doi:10.48550/arXiv.2506.09918</a></li>
-                <li>Vatedka, R., Tyagi, A., Vadodariya, K., Agrawal, V. K., Chatterjee, R., Chellammal, R. M., Jayasurya, K. M., et al. (2025). "X-ray spectroscopy and timing experiment on XPoSat: instrument configuration and science prospects". <em>Journal of Astronomical Telescopes, Instruments, and Systems</em>, 11(3), 035001. <a href="https://doi.org/10.1117/1.JATIS.11.3.035001" target="_blank">doi:10.1117/1.JATIS.11.3.035001</a></li>
-                <li>Majumder, S., Kushwaha, A., Singh, S., Jayasurya, K. M., Das, S., & Nandi, A. (2025). "Probing the accretion geometry of black hole X-ray binaries: A multi-mission spectro-polarimetric and timing study". <em>arXiv e-prints</em>. <a href="https://doi.org/10.48550/arXiv.2506.03774" target="_blank">doi:10.48550/arXiv.2506.03774</a></li>
-                <li>Majumder, S., Chatterjee, R., Jayasurya, K. M., Das, S., & Nandi, A. (2024). "First Detection of X-Ray Polarization in Galactic Ultraluminous X-Ray Pulsar Swift J0243.6+6124 with IXPE". <em>The Astrophysical Journal Letters</em>, 971(1), L21. <a href="https://doi.org/10.3847/2041-8213/ad67e5" target="_blank">doi:10.3847/2041-8213/ad67e5</a></li>
-                <li>Jayasurya, K. M., Agrawal, V. K., & Chatterjee, R. (2023). "Detection of significant X-ray polarization from transient NS-LMXB XTE J1701-462 with IXPE and its implication on the coronal geometry". <em>Monthly Notices of the Royal Astronomical Society</em>, 525(3), 4657-4662. <a href="https://doi.org/10.1093/mnras/stad2601" target="_blank">doi:10.1093/mnras/stad2601</a></li>
-                <li>Kushwaha, A., Jayasurya, K. M., Agrawal, V. K., & Nandi, A. (2023). "IXPE and NICER view of black hole X-ray binary 4U 1630-47...". <em>Monthly Notices of the Royal Astronomical Society: Letters</em>, 524(1), L15-L20. <a href="https://doi.org/10.1093/mnrasl/slad070" target="_blank">doi:10.1093/mnrasl/slad070</a></li>
-                <li>Chatterjee, R., Agrawal, V. K., Jayasurya, K. M., & Katoch, T. (2023). "Spectro-polarimetric view of bright atoll source GX 9+9 using IXPE and AstroSat". <em>MNRAS: Letters</em>, 521(1), L74-L78. <a href="https://doi.org/10.1093/mnrasl/slad026" target="_blank">doi:10.1093/mnrasl/slad026</a></li>
-            </ul>
-            <p class="view-more">For a complete list, please visit my <a href="https://orcid.org/0000-0002-3430-9837" target="_blank">ORCID profile</a>.</p>
-        </section>
-
-        <section id="other-publications">
-            <h2>Other Publications</h2>
-            <ul class="publication-list">
-                <li>Jayasurya, K. M., Vadodariya, K., & Radhakrishna, V. (2024). "Multifaceted Simulations to design a TPC Polarimeter for Soft to Medium X-rays". <em>42nd meeting of the Astronomical Society of India (ASI)</em>, 42, P11.</li>
-                <li>Surabhi, C., Resmi, L., & Jayasurya, K. M. (2024). "Exploring Gamma-Ray Burst Radio Afterglow Population". <em>42nd meeting of the Astronomical Society of India (ASI)</em>, 42, P137.</li>
-                <li>Perley, D., et al., including Jayasurya, K. M. (2020). "Follow-up observations of GSNST-20ca (AT2020rml) with the Liverpool Telescope". <em>Transient Name Server AstroNote</em>, 161, 1.</li>
-            </ul>
-        </section>
-
-        <section id="conferences">
-            <h2>Attended Conferences & Workshops</h2>
-            <ul class="two-col-list">
-                <li>XSPECT-XPoSat Workshop, URSC, Bengaluru (2025)</li>
-                <li>Astronomical Society of India (ASI), NIT, Rourkela (2025)</li>
-                <li>NICER-IXPE Workshop, Washington D.C. (2024)</li>
-                <li>National Space Science Symposium (NSSS), University of Goa (2024)</li>
-                <li>Astronomical Society of India (ASI), IISc, Bengaluru (2024)</li>
-                <li>GROWTH - Time Domain Astronomy Workshop, Caltech, California (Aug 2020)</li>
-            </ul>
-        </section>
-
-        <!-- 
-        <section id="observing">
-            <h2>Observing Proposals & Experience</h2>
-            <p>Section disabled temporarily.</p>
-        </section> 
-        -->
-
-        <footer>
-            <p>&copy; 2026 Kiran M Jayasurya. All rights reserved.</p>
-        </footer>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="wordmark" href="#top" aria-label="Kiran M. Jayasurya home">KMJ<span>.</span></a>
+      <div class="nav-right">
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#observing">Observing</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.9 13A8.5 8.5 0 0 1 11 3.1 8.6 8.6 0 1 0 20.9 13Z"></path></svg>
+          <span class="theme-label">Dark</span>
+        </button>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" type="button">Menu</button>
+      </div>
     </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">HIGH-ENERGY ASTROPHYSICS · X-RAY ASTRONOMY</p>
+        <h1>Kiran M.<br><em>Jayasurya</em></h1>
+        <p class="hero-lede">I study how matter accretes onto compact objects.</p>
+        <p class="hero-description">Research on neutron stars, ultraluminous X-ray sources, and accretion physics using X-ray spectroscopy, timing, and polarimetry.</p>
+        <div class="hero-links">
+          <a class="button button-primary" href="#publications">Publications <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#research">Research <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="small-note">PhD researcher · <span class="replace">Add your institution and current position</span></p>
+      </div>
+      <div class="hero-art" role="img" aria-label="Abstract illustration of an accretion disk surrounding a compact object">
+        <div class="art-grid"></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <div class="disk disk-back"></div><div class="core"></div><div class="disk disk-front"></div>
+        <span class="star star-a">✦</span><span class="star star-b">·</span><span class="star star-c">✧</span>
+        <div class="art-label">COMPACT OBJECTS <span>/</span> EXTREME ACCRETION</div>
+      </div>
+    </section>
+
+    <section class="section research-section" id="research">
+      <div class="section-label"><span>01</span> RESEARCH</div>
+      <div class="section-heading">
+        <h2>Accretion in<br><em>extreme environments.</em></h2>
+        <p>I use high-energy observations to investigate how matter behaves in the strong-gravity and strong-magnetic-field environments around compact objects.</p>
+      </div>
+      <div class="research-grid">
+        <article class="research-card">
+          <p class="card-index">R / 01</p><div class="mini-visual visual-accretion" aria-hidden="true"><span></span><i></i><b></b></div>
+          <h3>Super-Eddington accretion</h3>
+          <p>How radiation pressure, winds, and geometric collimation shape ultraluminous X-ray sources and supercritical accretion flows.</p>
+          <div class="tag-row"><span>ULXs</span><span>Accretion physics</span></div>
+        </article>
+        <article class="research-card">
+          <p class="card-index">R / 02</p><div class="mini-visual visual-polar" aria-hidden="true"><span></span><i></i><b></b></div>
+          <h3>X-ray spectro-polarimetry</h3>
+          <p>Using polarization measurements to constrain the geometry of accretion columns, scattering regions, and outflows.</p>
+          <div class="tag-row"><span>IXPE</span><span>Polarization</span></div>
+        </article>
+        <article class="research-card">
+          <p class="card-index">R / 03</p><div class="mini-visual visual-magnetic" aria-hidden="true"><span></span><i></i><b></b></div>
+          <h3>Neutron-star magnetic fields</h3>
+          <p>Searching for cyclotron resonance scattering features and spectral signatures of strongly magnetized accreting neutron stars.</p>
+          <div class="tag-row"><span>CRSFs</span><span>X-ray spectroscopy</span></div>
+        </article>
+      </div>
+      <div class="research-note">
+        <div><span class="note-label">WAVELENGTHS</span><strong>X-ray</strong><span>NuSTAR · XMM-Newton · Chandra · Swift · IXPE</span></div>
+        <div><span class="note-label">METHODS</span><strong>Spectroscopy & polarimetry</strong><span>Spectral modelling · Timing analysis · Detector methods</span></div>
+      </div>
+    </section>
+
+    <section class="section publications-section" id="publications">
+      <div class="section-label"><span>02</span> PUBLICATIONS</div>
+      <div class="section-heading">
+        <h2>Selected <em>publications.</em></h2>
+        <p>First-author and collaborative work on compact objects, X-ray binaries, ultraluminous sources, and high-energy astrophysics.</p>
+      </div>
+      <div class="publication-tools">
+        <label class="search-box"><span class="sr-only">Search publications</span><input id="publication-search" type="search" placeholder="Search publications…" autocomplete="off"><span aria-hidden="true">⌕</span></label>
+        <label class="filter-label">Authorship
+          <select id="author-filter"><option value="all">All papers</option><option value="first">First author</option><option value="co">Co-author</option></select>
+        </label>
+        <label class="filter-label">Year
+          <select id="year-filter"><option value="all">All years</option><option>2026</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>Earlier</option></select>
+        </label>
+      </div>
+      <p class="publication-count" id="publication-count">Example entry — replace with verified publications before publishing.</p>
+      <div class="publication-list" id="publication-list">
+        <!-- Duplicate this article for each real paper. Do not publish placeholder metadata. -->
+        <article class="publication-item" data-year="2026" data-authorship="first">
+          <div class="pub-year">2026</div><div class="pub-main">
+            <p class="pub-status">PUBLICATION PLACEHOLDER</p>
+            <h3>Replace with your actual publication title</h3>
+            <p class="pub-authors">Your name and co-authors</p>
+            <p class="pub-journal"><em>Journal Name</em> · Volume, page or article number</p>
+            <div class="pub-links"><a href="https://ui.adsabs.harvard.edu/" target="_blank" rel="noopener">NASA ADS ↗</a><a href="https://doi.org/" target="_blank" rel="noopener">DOI ↗</a></div>
+          </div>
+        </article>
+      </div>
+      <p class="section-footnote">Add your NASA ADS profile link here for the complete bibliography.</p>
+    </section>
+
+    <section class="section observing-section" id="observing">
+      <div class="section-label"><span>03</span> OBSERVING</div>
+      <div class="section-heading">
+        <h2>From proposals<br>to <em>observations.</em></h2>
+        <p>Add selected observing programmes, approved telescope time, and your role as PI or co-I where applicable.</p>
+      </div>
+      <div class="observing-panel">
+        <div class="observing-stat"><span>FACILITIES</span><strong>Space- and ground-based</strong><p>Summarize your experience with X-ray observatories and optical or infrared facilities.</p></div>
+        <div class="observing-stat"><span>PROGRAMMES</span><strong>Selected proposals</strong><p>List programme IDs, targets, allocated exposure time, and role after verifying the details.</p></div>
+        <div class="observing-stat"><span>YOUR ROLE</span><strong>PI / Co-I / collaborator</strong><p>Describe your contribution to proposal preparation, analysis, and interpretation.</p></div>
+      </div>
+      <p class="section-footnote">This section is optional. Remove it if you do not want to publish observing-programme details.</p>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-label"><span>04</span> ABOUT</div>
+      <div class="about-grid">
+        <div><h2>About <em>me.</em></h2><p class="about-intro">A little about my path into astrophysics.</p></div>
+        <div class="about-copy">
+          <p>I work on observational and methodological questions in high-energy astrophysics, with a particular interest in accreting neutron stars and ultraluminous X-ray sources.</p>
+          <p class="replace">Add a short biography: your current degree or position, institution, supervisors or collaborators if appropriate, and previous education.</p>
+          <h3>Background</h3>
+          <div class="timeline-item"><span>YEAR–PRESENT</span><div><strong>Current position</strong><p>Institution, country</p></div></div>
+          <div class="timeline-item"><span>YEAR–YEAR</span><div><strong>Previous degree or position</strong><p>University or institute</p></div></div>
+          <a class="button button-outline" href="assets/pdf/CV.pdf">Download academic CV <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-label"><span>05</span> CONTACT</div>
+      <div class="contact-panel">
+        <div><p class="eyebrow">GET IN TOUCH</p><h2>Let's talk <em>science.</em></h2></div>
+        <div class="contact-details">
+          <p>For research enquiries, collaborations, or discussions, feel free to contact me.</p>
+          <a class="email-link" href="mailto:YOUR.EMAIL@INSTITUTION.EDU">YOUR.EMAIL@INSTITUTION.EDU <span>↗</span></a>
+          <div class="social-links"><a href="https://orcid.org/" target="_blank" rel="noopener">ORCID ↗</a><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar ↗</a><a href="https://ui.adsabs.harvard.edu/" target="_blank" rel="noopener">NASA ADS ↗</a><a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="wordmark" href="#top">KMJ<span>.</span></a><p>© <span id="year">2026</span> Kiran M. Jayasurya</p><a href="#top">Back to top ↑</a></footer>
+
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const themeButton = document.getElementById('theme-toggle');
+      const themeLabel = themeButton.querySelector('.theme-label');
+      const updateThemeButton = () => {
+        const dark = root.dataset.theme === 'dark';
+        themeLabel.textContent = dark ? 'Light' : 'Dark';
+        themeButton.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+      };
+      updateThemeButton();
+      themeButton.addEventListener('click', () => {
+        const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+        root.dataset.theme = next;
+        try { localStorage.setItem('kmj-theme', next); } catch (_) {}
+        updateThemeButton();
+      });
+
+      const menuButton = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.site-nav');
+      menuButton.addEventListener('click', () => {
+        const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+        menuButton.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('is-open', !expanded);
+      });
+      nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+        nav.classList.remove('is-open');
+        menuButton.setAttribute('aria-expanded', 'false');
+      }));
+
+      const search = document.getElementById('publication-search');
+      const authorFilter = document.getElementById('author-filter');
+      const yearFilter = document.getElementById('year-filter');
+      const papers = Array.from(document.querySelectorAll('.publication-item'));
+      const count = document.getElementById('publication-count');
+      const filterPapers = () => {
+        const term = search.value.toLowerCase().trim();
+        const author = authorFilter.value;
+        const year = yearFilter.value;
+        let visible = 0;
+        papers.forEach(paper => {
+          const matchesText = paper.textContent.toLowerCase().includes(term);
+          const matchesAuthor = author === 'all' || paper.dataset.authorship === author;
+          const paperYear = paper.dataset.year || '';
+          const matchesYear = year === 'all' || (year === 'Earlier' ? Number(paperYear) < 2022 : paperYear === year);
+          const show = matchesText && matchesAuthor && matchesYear;
+          paper.hidden = !show;
+          if (show) visible++;
+        });
+        count.textContent = `${visible} ${visible === 1 ? 'entry' : 'entries'} shown`;
+      };
+      [search, authorFilter, yearFilter].forEach(el => el.addEventListener('input', filterPapers));
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
