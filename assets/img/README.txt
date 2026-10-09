@@ -1,1 +1,1 @@
-Optional images can be placed here. Current hero illustration is made with CSS.
+Optional images for the website can be placed in this folder. The current site uses a CSS illustration and does not require image assets.

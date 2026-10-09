@@ -1,33 +1,27 @@
-# Kiran M. Jayasurya — Academic Website
+# Kiran M. Jayasurya — academic website
 
-Responsive, single-page academic website built with plain HTML and CSS for GitHub Pages.
+A static academic website for GitHub Pages. It uses plain HTML and CSS, with no build tools or external font downloads.
 
-## Features
-- Light/dark mode toggle, remembers the visitor's choice
-- Uses the native Apple system font stack on Apple devices (`-apple-system`, `BlinkMacSystemFont`); falls back to system UI fonts elsewhere
-- Responsive mobile navigation
-- Research, publications, observing, biography, CV, and contact sections
-- Search, authorship, and year filters for the publication list
-- No build process, Ruby, or Jekyll required
+## Design choices
 
-## Publish
-1. Create a public repository named `YOUR-USERNAME.github.io`.
-2. Upload `index.html`, `styles.css`, and the `assets` folder to the repository root.
-3. In GitHub, open **Settings → Pages**.
-4. Choose **Deploy from a branch**, branch `main`, folder `/(root)`, then save.
-5. Wait for the site to publish at `https://YOUR-USERNAME.github.io/`.
+- One Apple system-font stack across the entire site; hierarchy comes from size and font weight.
+- No italic styling or differently coloured final words in headings.
+- Pure white light theme by default, with an optional dark-mode toggle.
+- Responsive layout, mobile navigation, publication search and year/type filters.
+- Research, Publications, About, and Contact sections; no Observing section.
+- `publications.bib` contains BibTeX entries based on the CV details supplied. Please verify author metadata before formal reuse.
 
-## Personalize before publishing
-In `index.html`, search for `YOUR.EMAIL@INSTITUTION.EDU`, `Add your institution`, `Replace with`, `Publication placeholder`, and `YEAR–YEAR`. Replace all placeholders with accurate details or remove them.
+## Before publishing
 
-- Update ORCID, Google Scholar, NASA ADS, GitHub, and institutional profile links.
-- Replace the example publication card with real verified bibliographic metadata. Duplicate the `<article class="publication-item" ...>` block for each paper. Set `data-year` to the paper's year and `data-authorship` to `first` or `co`.
-- Add your CV as `assets/pdf/CV.pdf`.
-- Remove the Observing section if you do not want it.
-- Check the descriptions carefully before publishing; starter research topics are not a substitute for a verified biography.
+1. Add your CV PDF as `assets/pdf/CV.pdf` so the download link works.
+2. Check publication metadata and author lists, especially the fourth 2025 XSPECT entry, which was transcribed from the CV as supplied.
+3. Review the biography, role, degree dates, and contact details for accuracy.
 
-## Apple fonts
-The stylesheet uses the operating system's built-in San Francisco/system font stack. On macOS and iOS it should use the native Apple UI font; on Windows/Linux it uses suitable local system fallbacks. Apple proprietary font files are not bundled.
+## Publish with GitHub Pages
 
-## Theme
-The button in the navigation switches between light and dark themes. The choice is stored in local storage. On a first visit, the page follows the visitor's operating-system appearance preference.
+1. Create a public repository named `YOUR-USERNAME.github.io` (replace with your GitHub username).
+2. Upload the contents of this folder to the repository root: `index.html`, `styles.css`, `publications.bib`, `README.md`, and `assets/`.
+3. In repository **Settings → Pages**, choose **Deploy from a branch**, select `main` and `/(root)`, then save.
+4. After GitHub Pages finishes deploying, visit `https://YOUR-USERNAME.github.io/`.
+
+The site defaults to a clean white background even if the operating system is in dark mode. The toggle lets visitors switch themes; their choice is remembered in the browser. The font stack uses system fonts including Apple's San Francisco where available; it does not redistribute Apple's proprietary font files.
