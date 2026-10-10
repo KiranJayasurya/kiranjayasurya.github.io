@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap');
 /* Academic minimalist portfolio — customize colors and spacing here. */
 :root {
   --paper: #ffffff;
@@ -8,8 +9,8 @@
   --accent: #b65c3a;
   --accent-dark: #81402a;
   --sage: #dfe4d9;
-  --serif: var(--sans);
-  --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+  --serif: "Newsreader", Georgia, serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --max: 1120px;
   color-scheme: light;
 }
