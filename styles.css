@@ -120,6 +120,7 @@ h2 { font-size: clamp(38px, 4.2vw, 56px); line-height: 1.08; margin-bottom: 0; }
 .publication-list { border-top: 2px solid var(--ink); }
 .publication-year-group { display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 24px; border-bottom: 1px solid var(--line); padding: 22px 0 28px; }
 .publication-year-heading { margin: 2px 0 0; font: 600 22px/1.15 var(--sans); letter-spacing: -.04em; font-variant-numeric: tabular-nums; }
+.publication-year-group:first-child .publication-year-heading {color: var(--accent);}
 .publication-year-heading span { display: block; margin-top: 7px; color: var(--muted); font-size: 11px; font-weight: 400; letter-spacing: 0; }
 .publication-year-list { list-style: none; counter-reset: pub; margin: 0; padding: 0; }
 .publication-item { counter-increment: pub; display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 16px; padding: 0 0 22px; margin: 0 0 22px; border-bottom: 1px solid var(--line); }
