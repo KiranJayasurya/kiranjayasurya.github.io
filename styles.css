@@ -42,6 +42,10 @@ button, input, select { font: inherit; font-family: var(--sans); }
 .site-nav a:hover { color: var(--accent); }
 .menu-toggle { display: none; border: 1px solid var(--line); border-radius: 3px; background: transparent; padding: 6px 10px; }
 .section { max-width: var(--max); padding: 100px 30px; margin: auto; }
+.section-footnote a .accent-word {
+  color: var(--accent);
+  font-weight: 600;
+}
 .hero { min-height: 620px; display: grid; grid-template-columns: 1.04fr .96fr; align-items: center; gap: 45px; padding-top: 88px; padding-bottom: 92px; }
 .eyebrow, .section-label, .card-index, .project-type { font-size: 10px; font-weight: 700; letter-spacing: .17em; }
 .eyebrow { color: var(--accent); margin: 0 0 23px; }
